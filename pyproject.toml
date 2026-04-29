@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stablegrpy"
+version = "0.1.0"
+description = "A stable Gelman-Rubin convergence diagnostic for Markov chain Monte Carlo"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+    { name = "Christina Knudson", email = "drchristinaknudson@gmail.com" },
+    { name = "Dootika Vats" },
+]
+keywords = [
+    "MCMC",
+    "Markov chain Monte Carlo",
+    "Gelman-Rubin",
+    "convergence diagnostics",
+    "Bayesian statistics",
+    "effective sample size",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "pytest-cov",
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "numpydoc",
+]
+
+[project.urls]
+Homepage = "https://github.com/knudson1/stableGR"
+"Bug Tracker" = "https://github.com/knudson1/stableGR/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["stablegrpy*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
