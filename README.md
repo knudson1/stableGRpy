@@ -2,7 +2,7 @@
 
 A stable Gelman-Rubin convergence diagnostic for Markov chain Monte Carlo.
 
-This is the development repo for the Python port of the R package [stableGR](https://cran.r-project.org/package=stableGR) (Knudson & Vats). When complete, this package will implement the improved Gelman-Rubin statistic based on the **replicated lugsail batch means estimator** as described in [Revisiting the Gelman-Rubin Diagnostic](https://arxiv.org/abs/1812.09384)
+This is the development repo for the Python port of the R package [stableGR](https://cran.r-project.org/package=stableGR) (Knudson & Vats). When complete, this package will implement the improved Gelman-Rubin statistic based on the **replicated lugsail batch means estimator** as described in [Revisiting the Gelman-Rubin Diagnostic](https://doi.org/10.1214/20-STS812).
 
 
 ## Background
@@ -20,7 +20,6 @@ Additionally, this package provides a **principled, ESS-based stopping threshold
 R̂ ≈ sqrt(1 + m / ESS)
 ```
 
-A threshold of R̂ ≤ 1.1 corresponds to only ~5 effective samples per chain — far too few for reliable inference.
 
 ## Installation
 
@@ -32,7 +31,7 @@ pip install "git+https://github.com/knudson1/stableGR.git#subdirectory=stableGRp
 
 ## References
 
-Vats, D. and Knudson, C. (2021). Revisiting the Gelman-Rubin Diagnostic. *Statistical Science*, 36(4), 518–529. [arXiv:1812.09384](https://arxiv.org/abs/1812.09384)
+Vats, D. and Knudson, C. (2021). Revisiting the Gelman-Rubin Diagnostic. *Statistical Science*, 36(4), 518–529. [https://doi.org/10.1214/20-STS812](https://doi.org/10.1214/20-STS812)
 
 Vats, D. and Flegal, J. M. (2022). Lugsail lag windows for estimating time-average covariance matrices. *Biometrika*, 109(3), 735–750. [arXiv:1809.04541](https://arxiv.org/abs/1809.04541)
 
