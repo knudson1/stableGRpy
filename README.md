@@ -1,8 +1,9 @@
-# stablegrpy
+# stableGRpy
 
 A stable Gelman-Rubin convergence diagnostic for Markov chain Monte Carlo.
 
-Python port of the R package [stableGR](https://cran.r-project.org/package=stableGR) (Knudson & Vats), implementing the improved Gelman-Rubin statistic based on the **replicated lugsail batch means estimator**.
+This is the development repo for the Python port of the R package [stableGR](https://cran.r-project.org/package=stableGR) (Knudson & Vats). When complete, this package will implement the improved Gelman-Rubin statistic based on the **replicated lugsail batch means estimator** as described in [Revisiting the Gelman-Rubin Diagnostic](https://arxiv.org/abs/1812.09384)
+
 
 ## Background
 
@@ -24,7 +25,8 @@ A threshold of R̂ ≤ 1.1 corresponds to only ~5 effective samples per chain �
 ## Installation
 
 ```bash
-pip install "git+https://github.com/knudson1/stableGR.git#subdirectory=stableGRpy"```
+pip install "git+https://github.com/knudson1/stableGR.git#subdirectory=stableGRpy"
+```
 
 **Dependencies:** `numpy >= 1.23`, `scipy >= 1.9`
 
