@@ -3,6 +3,8 @@ Standalone tests for _validate.py.
 
 Run the tests with:
     python -m pytest stablegrpy/tests/test_validate.py -v
+or:
+    python stablegrpy/tests/test_validate.py
 """
 
 import numpy as np
